@@ -1,12 +1,6 @@
 import React from "react"
 
 class Cardbuilder extends React.Component{
-    consutuctor(){
-        super()
-
-    }
-
-
 render () {
     return(
         <div className = "cardStyles">
@@ -19,4 +13,4 @@ render () {
     )
 }
 }
-export default Cardbulider
+export default Cardbuilder
