@@ -13,7 +13,7 @@ const PokemonIndex = [
       category: "Lizard",
       weight: "18.7",
       abilities: "Blaze",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"
       },
       {
       id: 3,
@@ -21,7 +21,7 @@ const PokemonIndex = [
       category: "Tiny Turtle",
       weight: "19.8",
       abilities: "Torrent",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png"
       },
       {
       id: 4,
@@ -29,7 +29,7 @@ const PokemonIndex = [
       category: "Worm",
       weight: "6.4",
       abilities: "Shield Dust",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png"
       },
       {
       id: 5,
@@ -37,7 +37,7 @@ const PokemonIndex = [
       category: "Poison Bee",
       weight: "65.0",
       abilities: "Swarm",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png"
       },
       {
       id: 6,
@@ -45,7 +45,7 @@ const PokemonIndex = [
       category: "Tiny Bird",
       weight: "4.0",
       abilities: "Keen Eye, Tangled Feet",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png"
       },
       {
       id: 7,
@@ -53,7 +53,7 @@ const PokemonIndex = [
       category: "Mouse",
       weight: "7.7",
       abilities: "Runaway, Guts",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png"
       },
       {
       id: 8,
@@ -61,7 +61,7 @@ const PokemonIndex = [
       category: "Snake",
       weight: "15.2",
       abilities: "Shed Skin, Intimidate",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png"
       },
       {
       id: 9,
@@ -69,7 +69,7 @@ const PokemonIndex = [
       category: "Mouse",
       weight: "13.2",
       abilities: "Static",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"
       },
       {
       id: 10,
@@ -77,7 +77,7 @@ const PokemonIndex = [
       category: "Mouse",
       weight: "26.5",
       abilities: "Sand Veil",
-      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png"
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png"
       },
   ];
   
