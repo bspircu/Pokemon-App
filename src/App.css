@@ -52,3 +52,13 @@
 .PokemonName {
   font-family: fantasy;
 }
+
+.form {
+  font-family: fantasy;
+  font-size: 30px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import PokemonApp from "./PokemonApp";
+import SelectedPokemonComponent from "./SelectedPokemonComponent";
 
 class AppLoad extends React.Component {
   constructor() {
@@ -13,7 +13,7 @@ class AppLoad extends React.Component {
       this.setState({
         isLoading: false
       });
-    }, 4000);
+    }, 2000);
   }
   render() {
     return (
@@ -21,7 +21,7 @@ class AppLoad extends React.Component {
         {this.state.isLoading ? (
           <h1 style={{ textAlign: "center" }}> Loading.... </h1>
         ) : (
-          <PokemonApp />
+          <SelectedPokemonComponent />
         )}
       </div>
     );
