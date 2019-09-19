@@ -1,8 +1,7 @@
-import React from 'react';
-import './App.css';
-import Header from "./Components/Header"
-import AppLoad from "./Components/AppLoad"
-
+import React from "react";
+import "./App.css";
+import Header from "./Components/Header";
+import AppLoad from "./Components/AppLoadSimulator";
 
 function App() {
   return (
