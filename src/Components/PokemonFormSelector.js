@@ -6,7 +6,7 @@ function PokemonFormSelector(props) {
       <p>Please Select a Pokemon</p>
       <select
         className="selector-styles"
-        value={props.SelectedPokemon}
+        value={props.selectedPokemon}
         onChange={props.OnSelectedPokemon}
       >
         {PokemonIndex.map(Pokemon => (

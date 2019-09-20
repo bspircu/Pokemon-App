@@ -71,3 +71,13 @@
 .selector-styles {
   margin: auto;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  font-size: 15px;
+  border-radius: 6px;
+  width: 100px;
+  cursor: pointer;
+}
