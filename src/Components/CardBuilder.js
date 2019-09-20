@@ -18,7 +18,7 @@ class Cardbuilder extends React.Component {
         <img
           onMouseEnter={() => this.handleHover(true)}
           onMouseLeave={() => this.handleHover(false)}
-          style={{ border: this.state.hovered ? "ridge" : null }}
+          className={this.state.hovered ? "image-isHovered" : "image"}
           src={this.props.image}
           alt="error"
         />

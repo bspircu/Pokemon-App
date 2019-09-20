@@ -5,7 +5,7 @@ function PokemonFormSelector(props) {
     <form className="form">
       <p>Please Select a Pokemon</p>
       <select
-        style={{ margin: "auto" }}
+        className="selector-styles"
         value={props.SelectedPokemon}
         onChange={props.OnSelectedPokemon}
       >

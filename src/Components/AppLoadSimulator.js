@@ -19,7 +19,7 @@ class AppLoad extends React.Component {
     return (
       <div>
         {this.state.isLoading ? (
-          <h1 style={{ textAlign: "center" }}> Loading.... </h1>
+          <h1 className="loading-message"> Loading.... </h1>
         ) : (
           <SelectedPokemonComponent />
         )}
