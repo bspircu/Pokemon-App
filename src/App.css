@@ -70,6 +70,7 @@
 }
 .selector-styles {
   margin: auto;
+  cursor: pointer;
 }
 .button-container {
   display: flex;
