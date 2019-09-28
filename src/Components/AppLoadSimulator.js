@@ -1,31 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SelectedPokemonComponent from "./SelectedPokemonComponent";
 
-class AppLoad extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      isLoading: true
-    };
-  }
-  componentDidMount() {
+function AppLoad() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
     setTimeout(() => {
-      this.setState({
-        isLoading: false
-      });
+      setIsLoading(false);
     }, 2000);
-  }
-  render() {
-    return (
-      <div>
-        {this.state.isLoading ? (
-          <h1 className="loading-message"> Loading.... </h1>
-        ) : (
-          <SelectedPokemonComponent />
-        )}
-      </div>
-    );
-  }
+  }, []);
+  return (
+    <div>
+      {isLoading ? (
+        <h1 className="loading-message"> Loading.... </h1>
+      ) : (
+        <SelectedPokemonComponent />
+      )}
+    </div>
+  );
 }
 
 export default AppLoad;

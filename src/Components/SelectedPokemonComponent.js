@@ -1,56 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import PokemonFormSelector from "./PokemonFormSelector";
 import PokemonApp from "./PokemonApp";
 import PokemonIndex from "./PokemonIndex";
 
-class SelectedPokemonComponent extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      selectedPokemon: 1
-    };
-  }
-  SelectedPokemonHandler = event => {
+function SelectedPokemonComponent() {
+  const [selectedPokemon, setSelectedPokemon] = useState(1);
+
+  const selectedPokemonHandler = event => {
     const PokemonId = parseInt(event.target.value);
-    this.setState({ selectedPokemon: PokemonId });
+    setSelectedPokemon(PokemonId);
   };
 
-  clickNextHandler = () => {
-    this.setState(prevState => {
-      if (prevState.selectedPokemon === PokemonIndex.length)
-        return { selectedPokemon: 1 };
-      else return { selectedPokemon: prevState.selectedPokemon + 1 };
+  const clickNextHandler = () => {
+    setSelectedPokemon(currentPokemon => {
+      if (currentPokemon === PokemonIndex.length) return 1;
+      else return currentPokemon + 1;
     });
   };
 
-  clickPreviousHandler = () => {
-    this.setState(prevState => {
-      if (prevState.selectedPokemon === 1)
-        return { selectedPokemon: PokemonIndex.length };
-      else return { selectedPokemon: prevState.selectedPokemon - 1 };
+  const clickPreviousHandler = () => {
+    setSelectedPokemon(currentPokemon => {
+      if (currentPokemon === 1) return PokemonIndex.length;
+      else return currentPokemon - 1;
     });
   };
 
-  render() {
-    return (
-      <React.Fragment>
-        <PokemonFormSelector
-          selectedPokemon={this.state.selectedPokemon}
-          OnSelectedPokemon={this.SelectedPokemonHandler}
-        />
-        <div className="button-container">
-          <button className="buttons" onClick={this.clickPreviousHandler}>
-            Previous
-          </button>
-          <button className="buttons" onClick={this.clickNextHandler}>
-            Next
-          </button>
-        </div>
+  return (
+    <React.Fragment>
+      <PokemonFormSelector
+        selectedPokemon={selectedPokemon}
+        OnSelectedPokemon={selectedPokemonHandler}
+      />
+      <div className="button-container">
+        <button className="buttons" onClick={clickPreviousHandler}>
+          Previous
+        </button>
+        <button className="buttons" onClick={clickNextHandler}>
+          Next
+        </button>
+      </div>
 
-        <PokemonApp selectedPokemon={this.state.selectedPokemon} />
-      </React.Fragment>
-    );
-  }
+      <PokemonApp selectedPokemon={selectedPokemon} />
+    </React.Fragment>
+  );
 }
 
 export default SelectedPokemonComponent;
